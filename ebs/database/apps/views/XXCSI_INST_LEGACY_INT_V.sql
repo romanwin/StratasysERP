@@ -1,0 +1,125 @@
+CREATE OR REPLACE VIEW XXCSI_INST_LEGACY_INT_V AS
+SELECT
+-- =============================================================================
+-- Copyright(c) :
+-- Application  : Custom Application
+-- -----------------------------------------------------------------------------
+-- Program name                 	Creation Date    Original Ver    Created by
+-- XXCSI_INST_LEGACY_INT_V	    		01-JUL-2016      1.0             TCS
+-- -----------------------------------------------------------------------------
+-- Usage: View creation script
+--
+-- -----------------------------------------------------------------------------
+-- Description: This is a view creation script for install base interim solution.
+--
+--
+-- Parameter    : None
+-- Return value : None
+-- -----------------------------------------------------------------------------
+-- Modification History:
+-- Modified Date     Version      Done by       Change Description
+--
+-- =============================================================================
+    EVENT_ID,
+    XE.TARGET_NAME,
+    XE.ENTITY_NAME,
+    XE.ENTITY_ID,
+    XE.ACTIVE_FLAG,
+    XE.STATUS,
+    XE.EVENT_NAME,
+    XE.REQUEST_MESSGAE,
+    XE.ERR_MESSAGE,
+    XE.ATTRIBUTE1,
+    XE.ATTRIBUTE2,
+    XE.ATTRIBUTE3,
+    XE.ATTRIBUTE4,
+    XE.ATTRIBUTE5,
+    XE.ATTRIBUTE6,
+    XE.ATTRIBUTE7,
+    XE.ATTRIBUTE8,
+    XE.ATTRIBUTE9,
+    XE.ATTRIBUTE10,
+    XE.LAST_UPDATE_DATE,
+    XE.LAST_UPDATED_BY,
+    XE.CREATION_DATE,
+    XE.CREATED_BY,
+    XE.LAST_UPDATE_LOGIN,
+    XE.BPEL_INSTANCE_ID,
+    XE.API_MESSAGE,
+    XE.CONCATENATED_KEY_COLS,
+    XILD."INSTANCE_ID",
+    XILD."PARENT_ID",
+    XILD."CHILD_ID",
+    XILD."INSTANCE_NUMBER",
+    XILD."RELATIONSHIP_TYPE_CODE",
+    XILD."RELATIONSHIP_END_DATE",
+    XILD."INSTANCE_END_DATE",
+    XILD."SERIAL_NUMBER",
+    XILD."MSTR_SERIAL_NUM",
+    XILD."MSTR_SEGMENT1",
+    XILD."LOT_NUMBER",
+    XILD."INV_LOCATOR_ID",
+    XILD."INVENTORY_ITEM_ID",
+    XILD."INV_MASTER_ORGANIZATION_ID",
+    XILD."INV_ORGANIZATION_ID",
+    XILD."INSTANCE_STATUS_ID",
+    XILD."INSTANCE_USAGE_CODE",
+    XILD."CUSTOMER_VIEW_FLAG",
+    XILD."MERCHANT_VIEW_FLAG",
+    XILD."INV_SUBINVENTORY_NAME",
+    XILD."QUANTITY",
+    XILD."UNIT_OF_MEASURE",
+    XILD."MFG_SERIAL_NUMBER_FLAG",
+    XILD."ACTIVE_START_DATE",
+    XILD."INSTALL_DATE",
+    XILD."OWNER_PARTY_SOURCE_TABLE",
+    XILD."OWNER_PARTY_ID",
+    XILD."OWNER_PARTY_ACCOUNT_ID",
+    XILD."INSTANCE_DESCRIPTION",
+    XILD."SEGMENT1",
+    XILD."SEGMENT2",
+    XILD."LAST_OE_ORDER_LINE_ID",
+    XILD."ATTRIBUTE1" ATTRIBUTE_1,
+    XILD."ATTRIBUTE2" ATTRIBUTE_2,
+    XILD."ATTRIBUTE3" ATTRIBUTE_3,
+    XILD."ATTRIBUTE4" ATTRIBUTE_4,
+    XILD."ATTRIBUTE5" ATTRIBUTE_5,
+    XILD."ATTRIBUTE6" ATTRIBUTE_6,
+    XILD."ATTRIBUTE7" ATTRIBUTE_7,
+    XILD."ATTRIBUTE8" ATTRIBUTE_8,
+    XILD."LEGACY_INSTANCE_ID",
+    XILD."ATTRIBUTE10" ATTRIBUTE_10,
+    XILD."ATTRIBUTE11" ATTRIBUTE_11,
+    XILD."SF_ID",
+    XILD."ATTRIBUTE13" ATTRIBUTE_13,
+    XILD."ATTRIBUTE14" ATTRIBUTE_14,
+    XILD."ATTRIBUTE15" ATTRIBUTE_15,
+    XILD."ATTRIBUTE16" ATTRIBUTE_16,
+    XILD."ATTRIBUTE17" ATTRIBUTE_17,
+    XILD."ATTRIBUTE18" ATTRIBUTE_18,
+    XILD."ATTRIBUTE19" ATTRIBUTE_19,
+    XILD."ATTRIBUTE20" ATTRIBUTE_20,
+    XILD."ATTRIBUTE21" ATTRIBUTE_21,
+    XILD."ATTRIBUTE22" ATTRIBUTE_22,
+    XILD."ATTRIBUTE23" ATTRIBUTE_23,
+    XILD."ATTRIBUTE24" ATTRIBUTE_24,
+    XILD."ATTRIBUTE25" ATTRIBUTE_25,
+    XILD."ATTRIBUTE26" ATTRIBUTE_26,
+    XILD."ATTRIBUTE27" ATTRIBUTE_27,
+    XILD."ATTRIBUTE28" ATTRIBUTE_28,
+    XILD."ATTRIBUTE29" ATTRIBUTE_29,
+    XILD."ATTRIBUTE30" ATTRIBUTE_30,
+    XILD."LOCATION_TYPE_CODE",
+    XILD."LOCATION_ID",
+    XILD."INSTALL_LOCATION_TYPE_CODE",
+    XILD."INSTALL_LOCATION_ID",
+    XILD."CUST_PO_NUMBER"
+  FROM XXCUST.XXSSYS_EVENTS@SOURCE_S3 XE ,
+  --FROM XXSSYS_EVENTS XE,
+    XXCSI_INST_LEGACY_DTLS_V XILD
+  WHERE 1           =1
+  AND entity_name   ='CSI_INST'
+  AND XE.ATTRIBUTE1 = XILD.MSTR_SERIAL_NUM-- SUBSTR FOR PILOT RUNNING NEED TO REMOVE
+  AND target_name   ='S3'
+  AND XE.status     ='NEW'
+

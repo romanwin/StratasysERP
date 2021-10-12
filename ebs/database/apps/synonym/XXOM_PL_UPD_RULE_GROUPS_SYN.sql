@@ -1,0 +1,2 @@
+create or replace synonym XXOM_PL_UPD_RULE_GROUPS for XXOBJT.XXOM_PL_UPD_RULE_GROUPS
+/

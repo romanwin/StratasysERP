@@ -1,0 +1,2 @@
+create or replace synonym XXOM_PL_UPD_SIMULATION_HDR_SEQ for xxobjt.XXOM_PL_UPD_SIMULATION_HDR_SEQ
+/

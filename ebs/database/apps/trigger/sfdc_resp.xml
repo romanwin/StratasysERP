@@ -1,0 +1,335 @@
+<nstrgmpr:queryResponse xmlns:nstrgmpr="http://xmlns.oracle.com/cloud/adapter/salesforce/strataforceQueryQuoteDetails_REQUEST">
+	<nstrgmpr:QueryResults>
+		<nstrgmpr:done>true</nstrgmpr:done>
+		<nstrgmpr:queryLocator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+		<nstrgmpr:records xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="sf:SBQQ__Quote__c">
+			<nstrgmpr:Id>a0t07000000614BAAQ</nstrgmpr:Id>
+			<nstrgmpr:Channel__r xsi:type="sf:Account">
+				<nstrgmpr:Id xsi:nil="true"/>
+			</nstrgmpr:Channel__r>
+			<nstrgmpr:CurrencyIsoCode>USD</nstrgmpr:CurrencyIsoCode>
+			<nstrgmpr:Deal_Type__c>Purchase</nstrgmpr:Deal_Type__c>
+			<nstrgmpr:DirectIndirect__c>Direct</nstrgmpr:DirectIndirect__c>
+			<nstrgmpr:FreightTerms__r xsi:type="sf:Freight_Terms__c">
+				<nstrgmpr:Id xsi:nil="true"/>
+				<nstrgmpr:External_Key__c>EXW2010</nstrgmpr:External_Key__c>
+			</nstrgmpr:FreightTerms__r>
+			<nstrgmpr:Name>Q-485027</nstrgmpr:Name>
+			<nstrgmpr:Oracle_Operation_Number__c>20.0</nstrgmpr:Oracle_Operation_Number__c>
+			<nstrgmpr:PaymentTerm__r xsi:type="sf:Payment_term__c">
+				<nstrgmpr:Id xsi:nil="true"/>
+				<nstrgmpr:External_Key__c>1060</nstrgmpr:External_Key__c>
+			</nstrgmpr:PaymentTerm__r>
+			<nstrgmpr:SBQQ__Account__r xsi:type="sf:Account">
+				<nstrgmpr:Id xsi:nil="true"/>
+				<nstrgmpr:External_Key__c>63507</nstrgmpr:External_Key__c>
+			</nstrgmpr:SBQQ__Account__r>
+			<nstrgmpr:SBQQ__LineItems__r>
+				<nstrgmpr:done>true</nstrgmpr:done>
+				<nstrgmpr:queryLocator xsi:nil="true"/>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hd5AAA</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>11010.0</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838710</nstrgmpr:Name>
+					<nstrgmpr:Oracle_Line_Number__c>1.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:ProductTypefx__c>Systems</nstrgmpr:ProductTypefx__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>36700.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>25690.0</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>25690.0</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>1.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-34133</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Systems (net)</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-34133</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Systems.Design LE.Desktop.30.Objet30 Prime.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__SpecialPrice__c>36700.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hd6AAA</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>597.0</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838711</nstrgmpr:Name>
+					<nstrgmpr:Oracle_Line_Number__c>2.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>1990.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>1393.0</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>1393.0</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>7.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-01401</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Acc-Cleaning Equipment</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-01401</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Systems.Cleaning Equipment.Water Jet.Common.Common.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__SpecialPrice__c>1990.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hd7AAA</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>224.1</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838712</nstrgmpr:Name>
+					<nstrgmpr:Oracle_Line_Number__c>3.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:ProductTypefx__c>Materials</nstrgmpr:ProductTypefx__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>747.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>522.9</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>522.9</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>2.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-04055</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Mat-DT</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-04055</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Materials.Model.Design Realism.Transparent.VeroClear.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__RequiredBy__c>a0p070000007hd5AAA</nstrgmpr:SBQQ__RequiredBy__c>
+					<nstrgmpr:SBQQ__RequiredBy__r xsi:type="sf:SBQQ__QuoteLine__c">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+							<nstrgmpr:Id xsi:nil="true"/>
+							<nstrgmpr:PTO_KIT_Model__c>false</nstrgmpr:PTO_KIT_Model__c>
+						</nstrgmpr:SBQQ__Product__r>
+					</nstrgmpr:SBQQ__RequiredBy__r>
+					<nstrgmpr:SBQQ__SpecialPrice__c>747.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hd8AAA</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>76.5</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838713</nstrgmpr:Name>
+					<nstrgmpr:Oracle_Line_Number__c>4.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:ProductTypefx__c>Materials</nstrgmpr:ProductTypefx__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>255.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>178.5</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>178.5</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>3.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-04045</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Mat-DT</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-04045</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Materials.Support.Support.Support.SUP705.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__RequiredBy__c>a0p070000007hd5AAA</nstrgmpr:SBQQ__RequiredBy__c>
+					<nstrgmpr:SBQQ__RequiredBy__r xsi:type="sf:SBQQ__QuoteLine__c">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+							<nstrgmpr:Id xsi:nil="true"/>
+							<nstrgmpr:PTO_KIT_Model__c>false</nstrgmpr:PTO_KIT_Model__c>
+						</nstrgmpr:SBQQ__Product__r>
+					</nstrgmpr:SBQQ__RequiredBy__r>
+					<nstrgmpr:SBQQ__SpecialPrice__c>255.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hd9AAA</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>15.3</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838714</nstrgmpr:Name>
+					<nstrgmpr:Oracle_Line_Number__c>5.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:ProductTypefx__c>Materials</nstrgmpr:ProductTypefx__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>51.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>35.7</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>35.7</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>4.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-04018</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Mat-DT</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-04018</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Materials.Cleaning.Cleaning fluid.Model Cleaning fluid.CLNM.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__RequiredBy__c>a0p070000007hd5AAA</nstrgmpr:SBQQ__RequiredBy__c>
+					<nstrgmpr:SBQQ__RequiredBy__r xsi:type="sf:SBQQ__QuoteLine__c">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+							<nstrgmpr:Id xsi:nil="true"/>
+							<nstrgmpr:PTO_KIT_Model__c>false</nstrgmpr:PTO_KIT_Model__c>
+						</nstrgmpr:SBQQ__Product__r>
+					</nstrgmpr:SBQQ__RequiredBy__r>
+					<nstrgmpr:SBQQ__SpecialPrice__c>51.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hdAAAQ</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>15.3</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838715</nstrgmpr:Name>
+					<nstrgmpr:Oracle_Line_Number__c>6.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:ProductTypefx__c>Materials</nstrgmpr:ProductTypefx__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>51.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>35.7</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>35.7</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>5.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-04016</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Mat-DT</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-04016</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Materials.Cleaning.Cleaning fluid.Support Cleaning fluid.CLNS.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__RequiredBy__c>a0p070000007hd5AAA</nstrgmpr:SBQQ__RequiredBy__c>
+					<nstrgmpr:SBQQ__RequiredBy__r xsi:type="sf:SBQQ__QuoteLine__c">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+							<nstrgmpr:Id xsi:nil="true"/>
+							<nstrgmpr:PTO_KIT_Model__c>false</nstrgmpr:PTO_KIT_Model__c>
+						</nstrgmpr:SBQQ__Product__r>
+					</nstrgmpr:SBQQ__RequiredBy__r>
+					<nstrgmpr:SBQQ__SpecialPrice__c>51.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hdBAAQ</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>600.0</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838716</nstrgmpr:Name>
+					<nstrgmpr:Oracle_Line_Number__c>7.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:ProductTypefx__c>Installation</nstrgmpr:ProductTypefx__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>2000.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>1400.0</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>1400.0</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>6.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-04100</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Labor-Installation</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-04100</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Customer Support.Design LE.Desktop.Common.Common.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__RequiredBy__c>a0p070000007hd5AAA</nstrgmpr:SBQQ__RequiredBy__c>
+					<nstrgmpr:SBQQ__RequiredBy__r xsi:type="sf:SBQQ__QuoteLine__c">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+							<nstrgmpr:Id xsi:nil="true"/>
+							<nstrgmpr:PTO_KIT_Model__c>false</nstrgmpr:PTO_KIT_Model__c>
+						</nstrgmpr:SBQQ__Product__r>
+					</nstrgmpr:SBQQ__RequiredBy__r>
+					<nstrgmpr:SBQQ__SpecialPrice__c>2000.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hdFAAQ</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>0.0</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838717</nstrgmpr:Name>
+					<nstrgmpr:OracleRequiredBy__c>a0p070000007hd5AAA</nstrgmpr:OracleRequiredBy__c>
+					<nstrgmpr:Oracle_Line_Number__c>8.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:ProductTypefx__c>Materials</nstrgmpr:ProductTypefx__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>337.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>0.0</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>0.0</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>8.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-04073</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Mat-DT</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-04073</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Materials.Model.Basic.Opaque.VeroGray.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__SpecialPrice__c>0.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hdGAAQ</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>0.0</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838718</nstrgmpr:Name>
+					<nstrgmpr:OracleRequiredBy__c>a0p070000007hd5AAA</nstrgmpr:OracleRequiredBy__c>
+					<nstrgmpr:Oracle_Line_Number__c>9.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:ProductTypefx__c>Materials</nstrgmpr:ProductTypefx__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>255.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>0.0</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>0.0</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>9.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-04045</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Mat-DT</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-04045</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Materials.Support.Support.Support.SUP705.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__SpecialPrice__c>0.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hdKAAQ</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>0.0</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838719</nstrgmpr:Name>
+					<nstrgmpr:OracleRequiredBy__c>a0p070000007hd5AAA</nstrgmpr:OracleRequiredBy__c>
+					<nstrgmpr:Oracle_Line_Number__c>8.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:ProductTypefx__c>Materials</nstrgmpr:ProductTypefx__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>337.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>0.0</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>0.0</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>10.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-04073</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Mat-DT</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-04073</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Materials.Model.Basic.Opaque.VeroGray.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__SpecialPrice__c>0.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:records xsi:type="sf:SBQQ__QuoteLine__c">
+					<nstrgmpr:Id>a0p070000007hdLAAQ</nstrgmpr:Id>
+					<nstrgmpr:Manual_Discount_Amount__c>0.0</nstrgmpr:Manual_Discount_Amount__c>
+					<nstrgmpr:Name>QL-2838720</nstrgmpr:Name>
+					<nstrgmpr:OracleRequiredBy__c>a0p070000007hd5AAA</nstrgmpr:OracleRequiredBy__c>
+					<nstrgmpr:Oracle_Line_Number__c>9.0</nstrgmpr:Oracle_Line_Number__c>
+					<nstrgmpr:ProductTypefx__c>Materials</nstrgmpr:ProductTypefx__c>
+					<nstrgmpr:Related_System_Required_in_Interface__c>false</nstrgmpr:Related_System_Required_in_Interface__c>
+					<nstrgmpr:SBQQ__ListPrice__c>255.0</nstrgmpr:SBQQ__ListPrice__c>
+					<nstrgmpr:SBQQ__NetPrice__c>0.0</nstrgmpr:SBQQ__NetPrice__c>
+					<nstrgmpr:SBQQ__NetTotal__c>0.0</nstrgmpr:SBQQ__NetTotal__c>
+					<nstrgmpr:SBQQ__Number__c>11.0</nstrgmpr:SBQQ__Number__c>
+					<nstrgmpr:SBQQ__ProductCode__c>OBJ-04045</nstrgmpr:SBQQ__ProductCode__c>
+					<nstrgmpr:SBQQ__Product__r xsi:type="sf:Product2">
+						<nstrgmpr:Id xsi:nil="true"/>
+						<nstrgmpr:ActivityAnalysis__c>Mat-DT</nstrgmpr:ActivityAnalysis__c>
+						<nstrgmpr:External_Key__c>OBJ-04045</nstrgmpr:External_Key__c>
+						<nstrgmpr:ProductHierarchy__c>Materials.Support.Support.Support.SUP705.POLYJET.FG</nstrgmpr:ProductHierarchy__c>
+					</nstrgmpr:SBQQ__Product__r>
+					<nstrgmpr:SBQQ__Quantity__c>1.0</nstrgmpr:SBQQ__Quantity__c>
+					<nstrgmpr:SBQQ__SpecialPrice__c>0.0</nstrgmpr:SBQQ__SpecialPrice__c>
+					<nstrgmpr:UOM__c>EA</nstrgmpr:UOM__c>
+				</nstrgmpr:records>
+				<nstrgmpr:size>11</nstrgmpr:size>
+			</nstrgmpr:SBQQ__LineItems__r>
+			<nstrgmpr:SBQQ__Opportunity2__c>00607000001eAAyAAM</nstrgmpr:SBQQ__Opportunity2__c>
+			<nstrgmpr:SBQQ__PriceBook__r xsi:type="sf:Pricebook2">
+				<nstrgmpr:Id xsi:nil="true"/>
+				<nstrgmpr:External_Key__c>964017</nstrgmpr:External_Key__c>
+			</nstrgmpr:SBQQ__PriceBook__r>
+			<nstrgmpr:SBQQ__Primary__c>true</nstrgmpr:SBQQ__Primary__c>
+			<nstrgmpr:SBQQ__Status__c>Approved</nstrgmpr:SBQQ__Status__c>
+			<nstrgmpr:X3rdPartyAccount__r xsi:type="sf:Account">
+				<nstrgmpr:Id xsi:nil="true"/>
+				<nstrgmpr:External_Key__c>160188</nstrgmpr:External_Key__c>
+			</nstrgmpr:X3rdPartyAccount__r>
+			<nstrgmpr:X3rd_Party_Ship_To__r xsi:type="sf:Account">
+				<nstrgmpr:Id xsi:nil="true"/>
+				<nstrgmpr:External_Key__c>160189</nstrgmpr:External_Key__c>
+			</nstrgmpr:X3rd_Party_Ship_To__r>
+		</nstrgmpr:records>
+		<nstrgmpr:size>1</nstrgmpr:size>
+	</nstrgmpr:QueryResults>
+</nstrgmpr:queryResponse>

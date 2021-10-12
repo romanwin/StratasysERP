@@ -1,0 +1,1 @@
+create or replace synonym XXIBY_ORBITAL_ORDER_MAPPING for xxobjt.XXIBY_ORBITAL_ORDER_MAPPING;

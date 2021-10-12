@@ -1,0 +1,96 @@
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('49', 'Nadigo Ltd', 'not applicable', 'not applicable', 'N/A', 'Elimination');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('90', 'NA.CO90 - WorkShop', 'not applicable', 'not applicable', 'N/A', 'FPA only not needed for S3');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('48', 'MakerBot general partner DE', 'not applicable', 'not applicable', 'N/A', 'Elimination');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('96', 'Budget Stratasys Inc', 'not applicable', 'not applicable', 'N/A', 'Explanation - Budget not in S3 Oracle');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('97', 'Budget Interfacial Solutions', 'not applicable', 'not applicable', 'N/A', 'Explanation - Budget not in S3 Oracle');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('99', 'Elimination', 'not applicable', 'not applicable', 'N/A', 'Elimination');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('00', 'None', 'ALL', 'not applicable', 'N/A', 'Not Allowed for Company Code');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('81', 'Desktop Metal', 'EMEA', 'not applicable', '904', 'Desktop Metal');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('80', 'LPW', 'EMEA', 'not applicable', '903', 'LPW');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('82', 'Massivit', 'EMEA', 'not applicable', '902', 'Massivit');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('46', 'Fifth Element Materials LLC', 'US', 'not applicable', '901', 'Fifth Element Materials LLC');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('41', 'Stratasys Direct Inc', 'LATAM', '201', '503', 'Solid Concepts do Brasil Ltda (Brazil)');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('53', 'SSYS Mexico', 'LATAM', 'not applicable', '502', 'Stratasys Mexico');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('43', 'Stratasys Latam', 'LATAM', 'not applicable', '501', 'Stratasys Latam');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('42', 'Harvest Technologies', 'US', 'not applicable', '406', 'Harvest Technologies');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('33', 'RedEye', 'US', 'not applicable', '405', 'Stratasys Direct Inc');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('41', 'Stratasys Direct Inc', 'US', 'Not in (201,202,203)', '405', 'Stratasys Direct Inc');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('31', 'MakerBot Industries', 'US', 'not applicable', '404', 'MakerBot Industries');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('34', 'Solidscape', 'US', 'not applicable', '403', 'Solidscape');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('29', 'Seurat Holdings Inc', 'US', 'not applicable', '402', 'Seurat Holdings Inc');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('23', 'Objet US', 'US', 'not applicable', '401', 'Stratasys Inc');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('26', 'Stratasys Inc', 'US', 'not applicable', '401', 'Stratasys Inc');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('37', 'Interfacial Solutions', 'US', 'not applicable', '401', 'Stratasys Inc');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('44', 'GrabCAD, Inc', 'US', 'not applicable', '401', 'Stratasys Inc');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('51', 'Stratasys France Sarl', 'EMEA', 'not applicable', '306', 'Stratasys France Sarl');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('39', 'Stratasys Switzerland', 'EMEA', 'not applicable', '305', 'Stratasys Switzerland');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('38', 'Objet UK', 'EMEA', 'not applicable', '304', 'Objet UK');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('47', 'Econolyst', 'EMEA', 'not applicable', '304', 'Objet UK');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('35', 'Technimold', 'EMEA', 'not applicable', '303', 'Technimold');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('27', 'REA Real Estate GmbH', 'EMEA', 'not applicable', '302', 'REA Real Estate GmbH');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('22', 'Objet DE', 'EMEA', 'not applicable', '301', 'Stratasys GMBH');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('30', 'Old SSYS GMBH', 'EMEA', 'not applicable', '301', 'Stratasys GMBH');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('40', 'MakerBot Europe KG', 'EMEA', 'not applicable', '301', 'Stratasys GMBH');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('50', 'RTC Rapid Technologies GmbH', 'EMEA', 'not applicable', '301', 'Stratasys GMBH');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('41', 'Stratasys Direct Inc', 'APJ', '203', '209', 'AMICO');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('41', 'Stratasys Direct Inc', 'APJ', 'not applicable', '208', 'Solid Concepts HK Limited');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('41', 'Stratasys Direct Inc', 'APJ', '202', '207', 'Solid Concepts Shanghai');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('52', 'Solid Concepts 3D Printing (Shanghai) Ltd', 'APJ', 'not applicable', '207', 'Solid Concepts 3D Printing (Shanghai) Ltd. ');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('45', 'Stratasys India', 'APJ', 'not applicable', '206', 'Stratasys India (Stratasys India Private Limited)');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('36', 'Stratasys Korea', 'APJ', 'not applicable', '205', 'Stratasys Korea (Stratasys Korea Ltd)');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('32', 'Stratasys Singapore Pte. Ltd', 'APJ', 'not applicable', '204', 'Stratasys Singapore (Stratasys Singapore Pte. Ltd)');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('25', 'Objet Japan', 'APJ', 'not applicable', '203', 'Stratasys Japan  (Stratasys Japan Co., Ltd');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('24', 'Objet CN', 'APJ', 'not applicable', '202', 'Stratasys China (Stratasys Shanghai Limited)');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('21', 'Objet HK', 'APJ', 'not applicable', '201', 'Stratasys AP  (Stratasys AP Limited)');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('28', 'Stratasys International Ltd', 'EMEA', 'not applicable', '102', 'Stratasys International Ltd');
+insert into XXS3_COMPANIES_TRANSFORM (LEGACY_COMPANY, COMPANY_DESCRIPTION, REGION, SEGMENT10, S3_COMPANY, DESCRIPTION_OF_COMPANY)
+values ('10', 'Objet IL', 'EMEA', 'not applicable', '101', 'Stratasys LTD');
+commit;
+/
+
+

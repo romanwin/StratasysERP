@@ -1,0 +1,3 @@
+CREATE OR REPLACE DIRECTORY XXGL_ESSBASE_BALANCES_OUT_DIR AS '/mnt/oracle/gl/essbase/outgoing'
+/
+

@@ -1,0 +1,1 @@
+create or replace synonym XXHZ_SOA_API_DUP_CHK FOR XXOBJT.XXHZ_SOA_API_DUP_CHK;

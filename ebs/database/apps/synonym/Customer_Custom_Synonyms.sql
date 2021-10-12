@@ -1,0 +1,54 @@
+
+CREATE SYNONYM XXS3_OTC_CUSTOMER_ACCOUNTS FOR xxobjt.XXS3_OTC_CUSTOMER_ACCOUNTS 
+/
+CREATE SYNONYM XXS3_OTC_CUSTOMER_ACCOUNTS_SEQ FOR xxobjt.XXS3_OTC_CUSTOMER_ACCOUNTS_SEQ
+/
+CREATE SYNONYM XXS3_OTC_CUST_ACCOUNTS_DQ_SEQ FOR xxobjt.XXS3_OTC_CUST_ACCOUNTS_DQ_SEQ
+/
+CREATE SYNONYM xxs3_otc_customer_accounts_dq FOR xxobjt.xxs3_otc_customer_accounts_dq
+/
+CREATE SYNONYM XXS3_OTC_CUST_ACCT_SITES FOR xxobjt.XXS3_OTC_CUST_ACCT_SITES
+/
+CREATE SYNONYM XXS3_OTC_CUST_ACCT_SITES_SEQ FOR xxobjt.XXS3_OTC_CUST_ACCT_SITES_SEQ
+/
+CREATE SYNONYM xxs3_otc_customer_profiles FOR xxobjt.xxs3_otc_customer_profiles
+/
+CREATE SYNONYM xxs3_otc_customer_profiles_seq FOR xxobjt.xxs3_otc_customer_profiles_seq
+/
+CREATE SYNONYM xxs3_otc_customer_profiles_dq FOR xxobjt.xxs3_otc_customer_profiles_dq
+/
+CREATE SYNONYM xxs3_otc_cust_profiles_dq_seq FOR xxobjt.xxs3_otc_cust_profiles_dq_seq
+/
+CREATE SYNONYM xxs3_otc_cust_relationships FOR xxobjt.xxs3_otc_cust_relationships
+/
+CREATE SYNONYM xxs3_otc_cust_relations_seq FOR xxobjt.xxs3_otc_cust_relations_seq
+/
+CREATE SYNONYM xxs3_otc_cust_profile_amts FOR xxobjt.xxs3_otc_cust_profile_amts
+/
+CREATE SYNONYM xxs3_otc_cust_profile_amts_seq FOR xxobjt.xxs3_otc_cust_profile_amts_seq 
+/
+CREATE SYNONYM xxs3_otc_cust_profile_amts_dq FOR xxobjt.xxs3_otc_cust_profile_amts_dq
+/
+CREATE SYNONYM xxs3_otc_cust_prof_amts_dq_seq FOR xxobjt.xxs3_otc_cust_prof_amts_dq_seq
+/
+CREATE SYNONYM xxs3_otc_cust_acct_site_uses FOR xxobjt.xxs3_otc_cust_acct_site_uses
+/
+CREATE SYNONYM xxs3_otc_cus_act_site_uses_seq FOR xxobjt.xxs3_otc_cus_act_site_uses_seq
+/
+CREATE SYNONYM xxs3_otc_act_site_uses_dq_seq FOR xxobjt.xxs3_otc_act_site_uses_dq_seq
+/
+CREATE SYNONYM xxs3_otc_cus_act_site_uses_dq FOR xxobjt.xxs3_otc_cus_act_site_uses_dq
+/
+CREATE SYNONYM xxs3_otc_cust_acct_site_dq FOR xxobjt.xxs3_otc_cust_acct_site_dq
+/
+CREATE SYNONYM xxs3_otc_cust_acct_site_dq_seq FOR xxobjt.xxs3_otc_cust_acct_site_dq_seq
+/
+CREATE SYNONYM xxs3_otc_cust_acct_contacts FOR xxobjt.xxs3_otc_cust_acct_contacts
+/
+CREATE SYNONYM xxs3_otc_cust_contacts_seq FOR xxobjt.xxs3_otc_cust_contacts_seq
+/
+
+
+
+
+

@@ -1,0 +1,30 @@
+create or replace package XXCS_RES_UTIL is
+
+  -- Author  : ADI.SAFIN
+  -- Created : 27-Jun-13 14:49:13
+  -- Purpose : Load new resoultion codes to the system
+  
+  -- Public type declarations
+  PROCEDURE load_res_codes(retcode OUT NUMBER,
+                           errbuf OUT VARCHAR2);
+
+ -- Author  : ADI.SAFIN
+ -- Created : 27-Jun-13 14:49:13
+ -- Purpose : Map new resoultion codes to the inventory category
+                            
+  PROCEDURE map_res_codes(retcode OUT NUMBER,
+                          errbuf OUT VARCHAR2);        
+
+-- Author  : ADI.SAFIN
+-- Created : 16-Jul-13 14:49:13
+-- Purpose : Load new resoultion codes to the Sub resolution 3
+
+   PROCEDURE load_res3 (retcode OUT NUMBER,
+                        errbuf  OUT VARCHAR2);                       
+                        
+   
+   PROCEDURE set_lookups (retcode OUT NUMBER,
+                          errbuf  OUT VARCHAR2);
+
+end XXCS_RES_UTIL;
+/

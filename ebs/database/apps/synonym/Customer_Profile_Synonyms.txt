@@ -1,0 +1,23 @@
+CREATE SYNONYM xxs3_otc_customer_profiles_dq FOR xxobjt.xxs3_otc_customer_profiles_dq 
+/
+
+CREATE SYNONYM xxs3_otc_cust_profiles_dq_seq FOR xxobjt.xxs3_otc_cust_profiles_dq_seq 
+/
+
+CREATE SYNONYM xxs3_otc_cust_profile_amts_dq FOR xxobjt.xxs3_otc_cust_profile_amts_dq 
+/
+
+CREATE SYNONYM xxs3_otc_cust_prof_amts_dq_seq FOR xxobjt.xxs3_otc_cust_prof_amts_dq_seq 
+/
+
+CREATE SYNONYM xxs3_otc_customer_profiles FOR xxobjt.xxs3_otc_customer_profiles 
+/
+
+CREATE SYNONYM xxs3_otc_customer_profiles_seq FOR xxobjt.xxs3_otc_customer_profiles_seq 
+/
+
+CREATE SYNONYM xxs3_otc_cust_profile_amts FOR xxobjt.xxs3_otc_cust_profile_amts 
+/
+
+CREATE SYNONYM xxs3_otc_cust_profile_amts_seq FOR xxobjt.xxs3_otc_cust_profile_amts_seq 
+/

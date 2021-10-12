@@ -1,0 +1,193 @@
+﻿CREATE OR REPLACE VIEW XXCS_IB_RELATED_ITEMS_V AS
+SELECT
+--------------------------------------------------------------------
+--  name:            XXCS_IB_RELATED_ITEMS_V
+--  create by:       Roman
+--  Revision:        1.4
+--  creation date:   25/07/2010
+--------------------------------------------------------------------
+--  purpose :        Disco Report:  XX: Install Base
+--------------------------------------------------------------------
+--  ver  date        name             desc
+--  1.0  25/07/2010  Roman           initial build
+--  1.1  27/07/2010  Roman           Added parent item and description
+--  1.2  28/07/2010  Roman           Added CHILD_ITEM_FOR_PARAMETER
+--  1.3  19/12/2010  Roman           Modified additional_attributes query
+--  1.4  11/04/2011  Roman           Added items without relationship
+--------------------------------------------------------------------
+       OU.NAME OPERATING_UNIT,
+       REL.PARENT_INSTANCE_ID,
+       REL.OWNER_PARTY_ID,
+       REL.PARENT_SERIAL_NUMBER,
+       REL.PARENT_ITEM,
+       REL.PARENT_DESCRIPTION,
+       REL.PARTY_NAME OWNER,
+       REL.CHILD_INSTANCE_ID,
+       REL.CHILD_ITEM,
+       REL.CHILD_DESCRIPTION,
+       REL.CHILD_ITEM || '   -   ' || REL.CHILD_DESCRIPTION CHILD_ITEM_FOR_PARAMETER,
+       REL.CHILD_SERIAL_NUMBER,
+       REL.HASP_ENABLED_FOR_SW,
+       REL.HASP_EXPIRATION,
+       REL.SYSTEM_ID,
+       CST.NAME END_CUSTOMER,
+       REL.CREATION_DATE CHILD_CREATION_DATE
+  FROM (SELECT PAR.INSTANCE_ID PARENT_INSTANCE_ID,
+               PAR.OWNER_PARTY_ID,
+               PAR.SERIAL_NUMBER PARENT_SERIAL_NUMBER,
+               MSIB.SEGMENT1 PARENT_ITEM,
+               MSIB.DESCRIPTION  PARENT_DESCRIPTION,
+               HP.PARTY_NAME,
+               CHILD.INSTANCE_ID CHILD_INSTANCE_ID,
+               CHILD_ITEM.SEGMENT1 CHILD_ITEM,
+               CHILD_ITEM.DESCRIPTION CHILD_DESCRIPTION,
+               NVL2(CHILD.SERIAL_NUMBER,
+                    CHILD.SERIAL_NUMBER,
+                    CHILD.EXTERNAL_REFERENCE) CHILD_SERIAL_NUMBER,
+               --CIV2.ATTRIBUTE_VALUE HASP_ENABLED_FOR_SW,
+               (SELECT CIV2.ATTRIBUTE_VALUE
+                  FROM CSI_I_EXTENDED_ATTRIBS CIE2,
+                       CSI_IEA_VALUES         CIV2
+                 WHERE CIV2.INSTANCE_ID = CHILD.INSTANCE_ID
+                   AND CIE2.INVENTORY_ITEM_ID = CHILD.INVENTORY_ITEM_ID
+                   AND CIE2.ATTRIBUTE_CODE = 'OBJ_HASP_SV'
+                   AND CIV2.ATTRIBUTE_ID = CIE2.ATTRIBUTE_ID) HASP_ENABLED_FOR_SW,
+               --CIV1.ATTRIBUTE_VALUE HASP_EXPIRATION,
+               (SELECT CIV1.ATTRIBUTE_VALUE
+                  FROM CSI_I_EXTENDED_ATTRIBS CIE1,
+                       CSI_IEA_VALUES         CIV1
+                 WHERE CIV1.INSTANCE_ID = CHILD.INSTANCE_ID
+                   AND CIE1.INVENTORY_ITEM_ID = CHILD.INVENTORY_ITEM_ID
+                   AND CIE1.ATTRIBUTE_CODE = 'OBJ_HASP_EXP'
+                   AND CIV1.ATTRIBUTE_ID = CIE1.ATTRIBUTE_ID) HASP_EXPIRATION,
+               PAR.SYSTEM_ID,
+               CHILD.CREATION_DATE
+          FROM CSI_ITEM_INSTANCES     PAR,
+               CSI_II_RELATIONSHIPS   CIR,
+               MTL_SYSTEM_ITEMS_B     MSIB,
+               MTL_ITEM_CATEGORIES    MIC,
+               MTL_CATEGORIES_B       MCB,
+               HZ_PARTIES             HP,
+               CSI_ITEM_INSTANCES     CHILD,
+               MTL_SYSTEM_ITEMS_B     CHILD_ITEM,
+               CSI_INSTANCE_STATUSES  CIS1,
+               CSI_INSTANCE_STATUSES  CIS2/*,
+               (SELECT CIV1.ATTRIBUTE_VALUE
+                  FROM CSI_I_EXTENDED_ATTRIBS CIE1,
+                       CSI_IEA_VALUES         CIV1,
+                 WHERE CIV1.INSTANCE_ID = CHILD.INSTANCE_ID
+                   AND CIE1.INVENTORY_ITEM_ID = CHILD.INVENTORY_ITEM_ID
+                   AND CIE1.ATTRIBUTE_CODE = 'OBJ_HASP_EXP'
+                   AND CIV1.ATTRIBUTE_ID = CIE1.ATTRIBUTE_ID) HASP_EXPIRATION
+               (SELECT CIV2.ATTRIBUTE_VALUE
+                  FROM CSI_I_EXTENDED_ATTRIBS CIE2,
+                       CSI_IEA_VALUES         CIV2
+                 WHERE CIV2.INSTANCE_ID = CHILD.INSTANCE_ID
+                   AND CIE2.INVENTORY_ITEM_ID = CHILD.INVENTORY_ITEM_ID
+                   AND CIE2.ATTRIBUTE_CODE = 'OBJ_HASP_SV'
+                   AND CIV2.ATTRIBUTE_ID = CIE2.ATTRIBUTE_ID) HASP_ENABLED_FOR_SW*/
+         WHERE MCB.CATEGORY_ID = MIC.CATEGORY_ID
+           AND MCB.ATTRIBUTE4 = 'PRINTER'
+           AND MSIB.INVENTORY_ITEM_ID = MIC.INVENTORY_ITEM_ID
+           AND PAR.INVENTORY_ITEM_ID = MSIB.INVENTORY_ITEM_ID
+           AND MSIB.ORGANIZATION_ID = 91
+           AND MIC.ORGANIZATION_ID = MSIB.ORGANIZATION_ID
+           AND PAR.OWNER_PARTY_ID = HP.PARTY_ID
+           AND HP.PARTY_NAME != 'Objet Internal Install Base'
+           AND CIR.OBJECT_ID = PAR.INSTANCE_ID
+           AND CIR.SUBJECT_ID = CHILD.INSTANCE_ID
+           AND CHILD.INVENTORY_ITEM_ID = CHILD_ITEM.INVENTORY_ITEM_ID
+           AND MSIB.ORGANIZATION_ID = CHILD_ITEM.ORGANIZATION_ID
+           AND PAR.INSTANCE_STATUS_ID = CIS1.INSTANCE_STATUS_ID
+           AND CHILD.INSTANCE_STATUS_ID = CIS2.INSTANCE_STATUS_ID
+           AND CIS1.TERMINATED_FLAG = 'N'
+           AND CIS2.TERMINATED_FLAG = 'N'
+           AND CIR.ACTIVE_END_DATE IS NULL
+ UNION
+        SELECT PAR.INSTANCE_ID PARENT_INSTANCE_ID,
+               PAR.OWNER_PARTY_ID,
+               PAR.SERIAL_NUMBER PARENT_SERIAL_NUMBER,
+               MSIB.SEGMENT1 PARENT_ITEM,
+               MSIB.DESCRIPTION  PARENT_DESCRIPTION,
+               HP.PARTY_NAME,
+               CHILD.INSTANCE_ID CHILD_INSTANCE_ID,
+               CHILD_ITEM.SEGMENT1 CHILD_ITEM,
+               CHILD_ITEM.DESCRIPTION CHILD_DESCRIPTION,
+               NVL2(CHILD.SERIAL_NUMBER,
+                    CHILD.SERIAL_NUMBER,
+                    CHILD.EXTERNAL_REFERENCE) CHILD_SERIAL_NUMBER,
+               '' HASP_ENABLED_FOR_SW,
+               '' HASP_EXPIRATION,
+               PAR.SYSTEM_ID,
+               CHILD.CREATION_DATE
+          FROM CSI_ITEM_INSTANCES    PAR,
+               CSI_II_RELATIONSHIPS  CIR,
+               MTL_SYSTEM_ITEMS_B    MSIB,
+               MTL_ITEM_CATEGORIES   MIC,
+               MTL_CATEGORIES_B      MCB,
+               HZ_PARTIES            HP,
+               CSI_ITEM_INSTANCES    CHILD,
+               MTL_SYSTEM_ITEMS_B    CHILD_ITEM,
+               CSI_INSTANCE_STATUSES CIS1,
+               CSI_INSTANCE_STATUSES CIS2
+         WHERE MCB.CATEGORY_ID = MIC.CATEGORY_ID
+           AND MCB.ATTRIBUTE4 = 'PRINTER'
+           AND MSIB.INVENTORY_ITEM_ID = MIC.INVENTORY_ITEM_ID
+           AND PAR.INVENTORY_ITEM_ID = MSIB.INVENTORY_ITEM_ID
+           AND MSIB.ORGANIZATION_ID = 91
+           AND MIC.ORGANIZATION_ID = MSIB.ORGANIZATION_ID
+           AND PAR.OWNER_PARTY_ID = HP.PARTY_ID
+           AND HP.PARTY_NAME != 'Objet Internal Install Base'
+           AND CIR.OBJECT_ID = PAR.INSTANCE_ID
+           AND CIR.SUBJECT_ID = CHILD.INSTANCE_ID
+           AND CHILD.INVENTORY_ITEM_ID = CHILD_ITEM.INVENTORY_ITEM_ID
+           AND MSIB.ORGANIZATION_ID = CHILD_ITEM.ORGANIZATION_ID
+           AND PAR.INSTANCE_STATUS_ID = CIS1.INSTANCE_STATUS_ID
+           AND CHILD.INSTANCE_STATUS_ID = CIS2.INSTANCE_STATUS_ID
+           AND CIS1.TERMINATED_FLAG = 'N'
+           AND CIS2.TERMINATED_FLAG = 'N'
+           AND CIR.ACTIVE_END_DATE IS NULL
+           AND CHILD_ITEM.DESCRIPTION NOT LIKE 'HASP%'
+   UNION
+        SELECT PAR.INSTANCE_ID PARENT_INSTANCE_ID, --Roman 11/04/2011
+               PAR.OWNER_PARTY_ID,
+               PAR.SERIAL_NUMBER PARENT_SERIAL_NUMBER,
+               MSIB.SEGMENT1 PARENT_ITEM,
+               MSIB.DESCRIPTION  PARENT_DESCRIPTION,
+               HP.PARTY_NAME,
+               NULL CHILD_INSTANCE_ID,
+               NULL CHILD_ITEM,
+               NULL CHILD_DESCRIPTION,
+               NULL CHILD_SERIAL_NUMBER,
+               NULL HASP_ENABLED_FOR_SW,
+               NULL HASP_EXPIRATION,
+               PAR.SYSTEM_ID,
+               NULL CREATION_DATE
+          FROM CSI_ITEM_INSTANCES    PAR,
+               MTL_SYSTEM_ITEMS_B    MSIB,
+               MTL_ITEM_CATEGORIES   MIC,
+               MTL_CATEGORIES_B      MCB,
+               HZ_PARTIES            HP,
+               CSI_INSTANCE_STATUSES CIS1
+         WHERE MCB.CATEGORY_ID = MIC.CATEGORY_ID
+           AND MCB.ATTRIBUTE4 = 'PRINTER'
+           AND MSIB.INVENTORY_ITEM_ID = MIC.INVENTORY_ITEM_ID
+           AND PAR.INVENTORY_ITEM_ID = MSIB.INVENTORY_ITEM_ID
+           AND MSIB.ORGANIZATION_ID = 91
+           AND MIC.ORGANIZATION_ID = MSIB.ORGANIZATION_ID
+           AND PAR.OWNER_PARTY_ID = HP.PARTY_ID
+           AND HP.PARTY_NAME != 'Objet Internal Install Base'
+           AND PAR.INSTANCE_STATUS_ID = CIS1.INSTANCE_STATUS_ID
+           AND CIS1.TERMINATED_FLAG = 'N'
+           AND NOT EXISTS (SELECT 1
+                            FROM CSI_II_RELATIONSHIPS  CIR
+                            WHERE cir.object_id = par.instance_id)) REL,
+       HZ_PARTIES HP,
+       HR_OPERATING_UNITS OU,
+       CSI_SYSTEMS_TL     CST
+ WHERE REL.OWNER_PARTY_ID = HP.PARTY_ID
+   AND HP.ATTRIBUTE3 = OU.ORGANIZATION_ID
+   AND REL.SYSTEM_ID = CST.SYSTEM_ID (+)
+   AND CST.LANGUAGE (+) = 'US'
+   AND XXCS_UTILS_PKG.CHECK_SECURITY_BY_OPER_UNIT(TO_NUMBER(HP.ATTRIBUTE3), REL.OWNER_PARTY_ID) = 'Y';
+
