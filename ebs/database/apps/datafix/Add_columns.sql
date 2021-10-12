@@ -14,6 +14,7 @@ chg2.1  yuval aaaa--------------------------------------------------------------
 --  ver   date          name            desc
 --  1.0   19.01.2018   Bellona Banerjee CHG0041294 - Datafix related to 
 --										TPL interface process modification.
+--  1.0   19.01.2018   Bellona Banerjee CHG0041294 - Datafix related to 
 --------------------------------------------------------------------------
 ALTER TABLE XXOBJT.XXINV_TRX_PICK_IN
   ADD (delivery_name    VARCHAR2(30),
